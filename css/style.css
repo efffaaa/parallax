@@ -1,0 +1,691 @@
+/* CSS Document */
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.navigation {
+	padding: 0;
+	margin: 0;
+	background-color: #95EFEA;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	text-align: center;
+	
+
+}
+
+
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 30px;
+
+}
+
+li a {
+	color: orange;
+	font-size: 20px;
+	font-family: noteworthy;
+	
+}
+
+a:hover {
+	color: darkblue;
+	text-decoration: none;
+}
+
+.active {
+	background-color:antiquewhite;
+}
+
+
+
+.main {
+	
+	margin-top: 40px;
+	height: 100%;
+}
+
+.slide {
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	position:relative;
+	padding: 30px;
+}
+
+.button {
+	display:block;
+	width: 50px;
+	height:50px;
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	margin-left:-25px;
+	background-image: url(../image/arrow1.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+}
+
+#slide1 {
+	background-image: url(../image/slide1/bg4.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+	
+	
+	
+}
+#slide2 {
+	background-image:url(../image/slide2/forestbg2.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 9;
+	
+	
+}
+#slide3 {
+	background-image:url(../image/skybg.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 9;
+	
+}
+
+
+#slide4 {
+	background-image: url(../image/slide1/bg4.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 9;
+}
+
+#slide5 {
+	background-image:url(../image/slide2/forestbg2.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 9;
+	
+}
+#slide6 {
+	background-image: url(../image/slide1/bg4.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 9;
+	
+}
+
+#slide7 {
+	background-image: url(../image/slide1/bg4.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 9;
+}
+
+
+.img {
+	position:absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 10;
+}
+
+.elephants {
+	position: absolute;
+	top:140px;
+	left: 110px;
+	
+}
+
+.layer1 {
+	position: absolute;
+	left: -70px;
+	top:-90px;
+	width: 100%;
+	
+}
+
+.title {
+	position:absolute;
+	left: 200px;
+	animation-delay: 3s;
+}
+.move {
+	animation-duration: 5s;
+	
+	
+}
+
+.elephantright {
+	position: absolute;
+	top: 130px;
+	left: 100px;
+	animation-duration: 5s;
+
+}
+
+.text1 {
+	position:absolute;
+	right: 100px;
+	top: 200px;
+	
+}
+
+.leg {
+	position: absolute;
+	top: -30px;
+	left: 100px;
+}
+
+.arrow {
+	position:absolute;
+	left: 350px;
+}
+
+.leaf {
+	position:absolute;
+	right: -100px;
+	top: 70px;
+	animation-delay: 1s;
+}
+
+.flowers {
+	position: absolute;
+	left: -100px;
+	top: 450px;
+	width: 100%;
+}
+
+.noears {
+	position: absolute;
+	left: 400px;
+	top: 55px;
+}
+.ear1 {
+	position: absolute;
+	left: 240px;
+	top: 40px;
+	animation-delay: 2s;
+	 
+	
+}
+
+.ear2 {
+	position:absolute;
+	right: 180px;
+	animation-delay: 2s;
+
+	
+}
+.title2 {
+	position:absolute;
+	top: 300px;
+	
+}
+
+.layer2 {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.elephanteat {
+	position:absolute;
+	top: 170px;
+	right: 160px;
+	animation-delay: 2s;
+	}
+.title3 {
+	position: absolute;
+	top: 350px;
+	left: 150px;
+}
+
+.walk1 {
+	position: absolute;
+	top: 180px;
+	right: 100px;
+}
+
+.walk2 {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+
+}
+
+.layer3 {
+	position: absolute;
+	top: 0px;
+	left: -70px;
+}
+
+
+
+.cloud1 {
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 150s;
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+
+.cloud2 {
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 50s;
+	
+}
+
+@keyframes drift {
+	
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.cloud3 {
+	position:absolute;
+	top:30px;
+	left: 200px;
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+	
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.cloud4 {
+	position:absolute;
+	top:50px;
+	left: 350px;
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 75s;
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.cloud5 {
+	position:absolute;
+	top:70px;
+	left: 400px;
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 50s;
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.cloud6 {
+	position:absolute;
+	top: 30px;
+	left: 600px;
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 100s;
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.cloud7 {
+	position:absolute;
+	top: 80px;
+	left: -50px;
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 65s;
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.cloud8 {
+	position:absolute;
+	top:100px;
+	left: 250px;
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 85s;
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.cloud9 {
+	position:absolute;
+	top:0px;
+	left: 50px;
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 40s;
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.cloud10 {
+	position:absolute;
+	top:120px;
+	left: 100px;
+	animation-name: drift;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 50s;
+	
+}
+
+@keyframes drift {
+	from {transform: translateX(0px);}
+	to { transform: translateX(500px);}
+}
+
+.title4 {
+	position:absolute;
+	top:400px;
+}
+
+.layer3 {
+	z-index: 10;
+}
+
+.apple {
+	position:absolute;
+	top:30px;
+	left: 10px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 10s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(100px);}
+	to { transform: translateY(540px);}
+}
+
+
+.banana {
+	position:absolute;
+	top:30px;
+	left: 200px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 15s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.peech {
+	position:absolute;
+	top:30px;
+	left: 100px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 25s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.grapes {
+	position:absolute;
+	top:30px;
+	left: 200px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 20s;
+	
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.banana {
+	position:absolute;
+	top:70px;
+	left: 400px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 35s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+
+.orange {
+	position:absolute;
+	top:70px;
+	left: 600px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 40s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.redgrape {
+	position:absolute;
+	top:100px;
+	left: 800px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 15s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.peech2 {
+	position:absolute;
+	top:40px;
+	left: 1000px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 8s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.banana2 {
+	position:absolute;
+	top:10px;
+	left: 1200px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 15s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(00px);}
+	to { transform: translateY(540px);}
+}
+
+.object {
+	position: absolute;
+	right: 270px;
+	top: 160px;
+}
+
+.banana3 {
+	position:absolute;
+	top:10px;
+	left: 560px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 10s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.orange2 {
+	position:absolute;
+	top:10px;
+	right: 200px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 15s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.grapes2 {
+	position:absolute;
+	top:10px;
+	left: 50px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 6s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.peech3 {
+	position:absolute;
+	top:10px;
+	left: 400px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 20s;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.title3 {
+	position:absolute;
+	top:30px;
+	left: 300px;
+	animation-name: drop;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+	z-index: 10;
+	
+}
+
+@keyframes drop {
+	from {transform: translateY(0px);}
+	to { transform: translateY(540px);}
+}
+
+.text5 {
+	position: absolute;
+	right: 0px;
+	top: 230px;
+	z-index: 999;
+}
